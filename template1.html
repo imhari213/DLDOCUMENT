@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Lync Course Completion Certificate </title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style type="text/css">
+		.outer{
+			padding: 15px 0px 10px 20px;
+			border: 3px solid black;
+			width: 97%;
+			background: url(certificate-banner.png) no-repeat center center fixed; 
+			/*background-size: cover;*/ 
+		}
+		.content{
+			padding-top: 30px;
+			font-size: 20px;
+			line-height: 50px;
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Open Sans', sans-serif;
+
+		}
+		.container-fluid{
+			padding: 10px;
+		}
+		.bold{
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="outer ">
+		<div class="row">
+			<div class="col-md-12">
+				<table>
+					<tr>
+						<td>
+							<img src="http://res.cloudinary.com/dr1rinab3/image/upload/v1522479106/logo_i2b26h.png">
+						</td>
+					</tr>
+					<tr>
+						<td><h3 class="content">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp			This is certify that <span>{{student.name}}</span> has successfully completed a course in  <span class="bold">{{student.course}}</span> on the day of <span class="bold">{{student.date}}</span> in the year <span class="bold">{{student.year}}.</span></h3></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	<div >
+		<table>
+			<tr>
+				<td><img src="http://res.cloudinary.com/dr1rinab3/image/upload/v1522478829/sign_ezomsh.png" alt="Sign"></td>
+			</tr>
+			<tr>
+				<td><h2>{{employee.name}}</h2></td>
+			</tr>
+			<tr>
+				<td><h4 style="margin-top: 0px; margin-bottom: 20px;">{{employee.designation}}</h4></td>
+			</tr>
+			<tr>
+				<td style="font-size: 15px; font-weight: bold; padding-top: 10px;">Public Key: </td>
+			</tr>
+			<tr>
+				<td style="font-size: 15px; font-weight: bold;">Blockchain Address: </td>
+			</tr>
+
+		</table>
+	</div>	
+</div>
+</div>
+</body>
+</html>
